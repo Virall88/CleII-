@@ -126,5 +126,51 @@ document.addEventListener('DOMContentLoaded', function () {
     Array.from(images).forEach(element => {
         portfolio.appendChild(element);
     });
+
+
+    //  :::::::::::::::::::: TITOLO APRIBILE :::::::::::::::::::::::::
+    document.querySelectorAll('h2').forEach(function (h2) {
+        let nextElementSet = h2.nextElementSibling;
+        while (nextElementSet && nextElementSet.tagName !== 'H2') {
+            nextElementSet.classList.add('hidden');
+            nextElementSet = nextElementSet.nextElementSibling;
+        }
+    });
+    // document.querySelectorAll('h2').forEach(function (h2) {
+    //     h2.addEventListener('click', function () {
+    //         let nextElement = this.nextElementSibling;
+    //         while (nextElement && nextElement.tagName !== 'H2') {
+    //             if (nextElement.classList.contains('hidden')) {
+    //                 nextElement.classList.remove('hidden');
+    //             } else {
+    //                 nextElement.classList.add('hidden');
+    //             }
+    //             nextElement = nextElement.nextElementSibling;
+    //         }
+    //     });
+    // });
+
+    document.querySelectorAll('h2').forEach(function (h2) {
+        h2.addEventListener('click', function () {
+            let nextElement = this.nextElementSibling;
+            while (nextElement && nextElement.tagName !== 'H2') {
+                if (nextElement.classList.contains('hidden')) {
+                    nextElement.classList.remove('hidden');
+                    nextElement.classList.add('slide-down');
+                    nextElement.classList.remove('slide-up');
+                } else {
+                    nextElement.classList.add('slide-up');
+                    nextElement.classList.remove('slide-down');
+                    setTimeout(function (element) {
+                        element.classList.add('hidden');
+                    }, 500, nextElement); // La durata deve corrispondere alla durata dell'animazione
+                }
+                nextElement = nextElement.nextElementSibling;
+            }
+        });
+    });
+    
+    
+
 });
 
