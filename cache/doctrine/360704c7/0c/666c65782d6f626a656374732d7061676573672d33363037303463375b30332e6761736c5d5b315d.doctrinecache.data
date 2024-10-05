@@ -1,0 +1,4 @@
+1727723092
+O:39:"Grav\Common\Flex\Types\Pages\PageObject":4:{s:4:"type";s:5:"pages";s:3:"key";s:4:"gasl";s:8:"elements";a:4:{s:4:"root";b:0;s:6:"header";a:1:{s:5:"title";s:4:"gasl";}s:11:"frontmatter";s:11:"title: gasl";s:8:"markdown";s:78:"# Chi siamo
+
+questo è il corpo della **pagina** dove aggiungere i _contenuti_";}s:7:"storage";a:7:{s:3:"key";s:4:"gasl";s:11:"storage_key";s:7:"03.gasl";s:8:"template";s:8:"standard";s:17:"storage_timestamp";i:1727109640;s:8:"markdown";a:1:{s:0:"";a:1:{s:8:"standard";i:1727109640;}}s:8:"children";a:2:{s:9:"chi-siamo";b:0;s:8:"progetti";b:0;}s:8:"checksum";s:32:"7263263b3032b1e556fa363cd15429b8";}}

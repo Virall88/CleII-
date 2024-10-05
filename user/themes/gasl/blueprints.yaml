@@ -1,0 +1,15 @@
+name: GASL
+slug: gasl.unich.it
+type: theme
+version: 1
+description: "aggiornamento del sito gasl.unich.it"
+icon: empire
+author:
+  name: Simone Cipolletta
+  email: simonecipolletta@gmail.com
+  url: 
+homepage: https://github.com/Virall88/Cleii
+demo: 
+keywords: gaslunich
+bugs: 
+license: MIT

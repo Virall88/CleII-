@@ -1,0 +1,54 @@
+absolute_urls: false
+timezone: "Europe/Rome"                  #
+#languages:                               #
+#  supported: [it,en,fr,de]               # 
+#  default_lang: it                       #
+#  content_fallback: ['it']               #
+home:
+  alias: '/home'
+
+pages:
+  theme: gasl
+  markdown:
+    extra: false
+  process:
+    markdown: true
+    twig: false
+
+cache:
+  enabled: false
+  check:
+    method: file
+  driver: auto
+  prefix: 'g'
+
+twig:
+  cache: true
+  debug: true
+  auto_reload: true
+  autoescape: true
+
+assets:
+  css_pipeline: false
+  css_minify: true
+  css_rewrite: true
+  js_pipeline: false
+  js_module_pipeline: false
+  js_minify: true
+
+errors:
+  display: true
+  log: true
+
+debugger:
+  enabled: false
+  twig: true
+  shutdown:
+    close_connection: true
+gpm:
+  verify_peer: true
+
+strict_mode:                                    # se si prevede di aggiornare Grav regolarmente la modalita Strict mantiene il sito allineato alle best practice
+  yaml_compat: false                            # Set to true to enable YAML backwards compatibility
+  twig_compat: false                            # Set to true to enable deprecated Twig settings (autoescape: false)
+  blueprint_compat: false                       # Set to true to enable backward compatible strict support for blueprints

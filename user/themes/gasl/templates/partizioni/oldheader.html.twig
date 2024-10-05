@@ -1,0 +1,56 @@
+{% set compress = theme_var('production-mode') ? '.min.css' : '.css' %}
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    {% block head deferred %}
+
+    <meta charset="UTF-8">
+    <title>{{ page.title|e }}</title>
+    {% endblock head %}
+
+    {% block stylesheets %}
+        {% do assets.addCss('theme://css-compilato/spectre'~compress) %}
+        {% if theme_var('spectre.exp') %}{% do assets.addCss('theme://css-compilato/spectre-exp'~compress)  %}{% endif %}
+        {% if theme_var('spectre.icons') %}{%  do assets.addCss('theme://css-compilato/spectre-icons'~compress) %}{% endif %}
+        {% do assets.addCss('theme://css/custom.css') %}
+    {% endblock %}
+
+    {% block javascripts %}
+        {% do assets.addJs('theme://js/mycode.js',{group:'bottom'}) %}
+    {% endblock %}
+
+    {% block assets deferred %}
+        {{ assets.css()|raw }}
+        {{ assets.js()|raw }}
+    {% endblock %}
+</head>
+<body>
+    {% block header %}
+    <header>
+        <!--<h1 style="color:{{ theme.color }}">{{ theme.info }}</h1>-->
+        <!-- Icona Burger menu -->
+        <div class="navbar">
+            <div class="burger-menu" id="burger-menu">
+                <span></span>
+                <span></span>
+                <span></span>            
+            </div>
+        </div> 
+        <!-- Menu di navigazione -->
+        <nav id="nav-menu" class="nav-menu">
+            <ul> <!--menu-->
+                <li><a href="http://localhost/grav-admin/home">Home</a></li>
+                <li><a href="http://localhost/grav-admin/servizi">Servizi</a></li>
+                <li class="dropdown" id="dropdown"><a href="#" class="dropbtn">Gasl</a> <!--dropdown-->
+                    <ul class="dropdown-content" id="dropdown-content"> <!--submenu-->
+                        <li><a href="http://localhost/grav-admin/gasl/chi-siamo/">Chi Siamo</a></li>
+                        <li><a href="http://localhost/grav-admin/gasl/progetti">Progetti</a></li>
+                    </ul>
+                </li>
+                <li><a href="http://localhost/grav-admin/docenti">Docenti</a></li>
+                <li><a href="">Fad</a></li>
+            </ul>
+        </nav>
+        <div class="spaziatore"></div>
+    </header>
+    {% endblock %}

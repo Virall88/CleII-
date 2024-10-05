@@ -1,0 +1,31 @@
+form: flex-pages
+id: 'tmp://forms/session/9eb1a18b48f9b02b2095ee6ff76fe70f'
+unique_id: 9eb1a18b48f9b02b2095ee6ff76fe70f
+url: '/pages/fad/:add'
+user:
+  username: admin
+  email: simone.cipolletta@studenti.unich.it
+timestamps:
+  created: 1727700700
+  updated: 1727700700
+data: null
+files: {  }
+object:
+  type: pages
+  key: fad
+  storage_key: ''
+  timestamp: 0
+  serialized:
+    __META: {  }
+    storage_key: ''
+    parent_key: ''
+    order: '07.'
+    folder: fad
+    template: standard
+    lang: ''
+    root: false
+    route: /
+    name: standard
+    header:
+      title: Fad
+    frontmatter: "title: Fad\n"

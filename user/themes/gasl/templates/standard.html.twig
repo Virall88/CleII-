@@ -1,0 +1,9 @@
+
+{% include 'partizioni/header.html.twig' %}
+  <div class="wrapper">
+    <main class="content">
+        {% block content %}
+            {{ page.content|raw }}
+        {% endblock %}
+    </main>
+    {% include 'partizioni/footer.html.twig' %}
