@@ -13,7 +13,6 @@ body {
 .nav-menu ul{
     list-style-type:none ;
     background-color: #99CCCC;
-
 }
 /* colore link menu navigazione*/
 .nav-menu ul li a, a:focus, a:hover, a:active, a.active{
@@ -36,7 +35,11 @@ h2{
 .dropdown{
     position: relative;
 }
-
+/* Gestione del problema di sovrapposizione su mobile */
+.slide-down{
+    z-index:-1!important;
+    position:relative;
+}
 /* DISATTIVO LASCIARE A JAVASCRIPT IL CONTROLLO DELL'HOVER DEL SOTTOMENU 
 .dropdown:hover .dropdown-content{
     display: block;
@@ -124,7 +127,7 @@ footer p{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 1;
+        z-index: 9999;
         text-align:center;
     }
     .nav-menu.active{
