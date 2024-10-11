@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/grav-admin/user/themes/gasl/blueprints/standard.yaml',
-    'modified' => 1727722483,
-    'size' => 997,
+    'modified' => 1728677446,
+    'size' => 995,
     'data' => [
         'title' => 'Pagina Standard',
         '@extends' => [
@@ -19,14 +19,13 @@ return [
                                 'overrides' => [
                                     'fields' => [
                                         'header.template' => [
-                                            'unset@' => true
-                                        ]
-                                    ]
-                                ],
-                                'column1' => [
-                                    'fields' => [
-                                        'header.body_classes' => [
-                                            'unset@' => true
+                                            'type' => 'select',
+                                            'label' => 'Seleziona Template',
+                                            'default' => 'default',
+                                            'options' => [
+                                                'default' => 'Standard',
+                                                'portfolio' => 'Portfolio'
+                                            ]
                                         ]
                                     ]
                                 ]

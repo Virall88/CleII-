@@ -2,8 +2,8 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => 'C:/xampp/htdocs/grav-admin/user/config/plugins/admin.yaml',
-    'modified' => 1727718151,
-    'size' => 2445,
+    'modified' => 1728679051,
+    'size' => 2171,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
@@ -122,25 +122,6 @@ return [
             4 => 'root',
             5 => 'error',
             6 => 'flex-object'
-        ],
-        'show_beta_msg' => NULL,
-        'hide_modular_page_types' => [
-            0 => 'default',
-            1 => 'external',
-            2 => 'form',
-            3 => 'modular',
-            4 => 'root',
-            5 => 'error',
-            6 => 'flex-object'
-        ],
-        'pagemedia' => [
-            'resize_width' => 0,
-            'resize_height' => 0,
-            'res_min_width' => 0,
-            'res_min_height' => 0,
-            'res_max_width' => 0,
-            'res_max_height' => 0,
-            'resize_quality' => 0.8
         ]
     ]
 ];

@@ -1,24 +1,3 @@
-# title: Pagina Standard
-# '@extends':
-#     type: default
-#     context: blueprints://pages
-
-# form:
-#   fields:
-#     tabs:
-#       fields:
-#         advanced:
-#           fields:
-#             overrides:
-#               fields:
-#                 header.template:
-#                   type: select
-#                   label: Seleziona Template
-#                   default: default
-#                   options:
-#                     default: Standard
-#                     portfolio: Portfolio
-
 title: Pagina Standard
 '@extends':
     type: default
@@ -33,8 +12,29 @@ form:
             overrides:
               fields:
                 header.template:
-                  unset@: true  # Questo campo sarà completamente rimosso
-            column1:
-              fields:
-                header.body_classes:
-                  unset@: true  # Anche questo campo sarà rimosso
+                  type: select
+                  label: Seleziona Template
+                  default: default
+                  options:
+                    default: Standard
+                    portfolio: Portfolio
+
+# title: Pagina Standard
+# '@extends':
+#     type: default
+#     context: blueprints://pages
+
+# form:
+#   fields:
+#     tabs:
+#       fields:
+#         advanced:
+#           fields:
+#             overrides:
+#               fields:
+#                 header.template:
+#                   unset@: true  # Questo campo sarà completamente rimosso
+#             column1:
+#               fields:
+#                 header.body_classes:
+#                   unset@: true  # Anche questo campo sarà rimosso

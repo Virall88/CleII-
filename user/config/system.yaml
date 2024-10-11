@@ -1,9 +1,5 @@
 absolute_urls: false
 timezone: "Europe/Rome"                  #
-#languages:                               #
-#  supported: [it,en,fr,de]               # 
-#  default_lang: it                       #
-#  content_fallback: ['it']               #
 home:
   alias: '/home'
 
@@ -48,7 +44,7 @@ debugger:
 gpm:
   verify_peer: true
 
-strict_mode:                                    # se si prevede di aggiornare Grav regolarmente la modalita Strict mantiene il sito allineato alle best practice
-  yaml_compat: false                            # Set to true to enable YAML backwards compatibility
-  twig_compat: false                            # Set to true to enable deprecated Twig settings (autoescape: false)
-  blueprint_compat: false                       # Set to true to enable backward compatible strict support for blueprints
+strict_mode:                                    
+  yaml_compat: false                            
+  twig_compat: false                            
+  blueprint_compat: false                       
